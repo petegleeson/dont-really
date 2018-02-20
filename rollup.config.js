@@ -1,5 +1,6 @@
 import resolve from "rollup-plugin-node-resolve";
 import commonjs from "rollup-plugin-commonjs";
+import hashbang from "rollup-plugin-hashbang";
 
 export default {
   input: "src/index.js",
@@ -7,6 +8,6 @@ export default {
     file: "dist/bundle.js",
     format: "cjs"
   },
-  external: ["fs", "path"],
-  plugins: [resolve({ preferBuiltins: true }), commonjs()]
+  external: ["fs", "path", "child_process"],
+  plugins: [hashbang(), resolve({ preferBuiltins: true }), commonjs()]
 };

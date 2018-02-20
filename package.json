@@ -1,5 +1,5 @@
 {
-  "name": "lpm",
+  "name": "dont-really",
   "version": "1.0.0",
   "description": "manage npm packages on a local registry",
   "main": "dist/index.js",
@@ -8,11 +8,15 @@
     "build": "rollup -c",
     "build:watch": "rollup -c -w"
   },
+  "bin": {
+    "dont-really": "dist/bundle.js"
+  },
   "author": "Pete Gleeson",
   "license": "ISC",
   "devDependencies": {
     "rollup": "^0.56.2",
     "rollup-plugin-commonjs": "^8.3.0",
+    "rollup-plugin-hashbang": "^1.0.1",
     "rollup-plugin-node-resolve": "^3.0.3"
   },
   "dependencies": {
