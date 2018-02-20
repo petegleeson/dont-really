@@ -1,6 +1,6 @@
 {
   "name": "dont-really",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "manage npm packages on a local registry",
   "main": "dist/index.js",
   "scripts": {
