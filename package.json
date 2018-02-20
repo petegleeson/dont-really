@@ -1,0 +1,15 @@
+{
+  "name": "lpm",
+  "version": "1.0.0",
+  "description": "manage npm packages on a local registry",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/bundle.js",
+    "build": "rollup -c"
+  },
+  "author": "Pete Gleeson",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^0.56.2"
+  }
+}
