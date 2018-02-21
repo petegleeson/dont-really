@@ -1,7 +1,7 @@
 {
   "name": "dont-really",
-  "version": "0.0.1",
-  "description": "manage npm packages on a local registry",
+  "version": "1.0.0",
+  "description": "conveniently manage packages on a local npm registry",
   "main": "dist/index.js",
   "scripts": {
     "start": "node dist/bundle.js",
