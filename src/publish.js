@@ -3,7 +3,7 @@ import path from "path";
 import { exec } from "child_process";
 import semver from "semver";
 import fetch from "node-fetch";
-import { url, postfix } from "./config";
+import { url } from "./config";
 
 const promiseExec = command =>
   new Promise((resolve, reject) =>
