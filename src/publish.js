@@ -2,8 +2,7 @@ import fs from "fs";
 import path from "path";
 import semver from "semver";
 import fetch from "node-fetch";
-import { url } from "./config";
-import { run } from "./common";
+import { run, getRegistryUrl } from "./common";
 
 const publish = async args => {
   // get the real information about the package
@@ -14,6 +13,7 @@ const publish = async args => {
   const packageJson = JSON.parse(original);
   const { name, version } = packageJson;
   // find the package on local registry
+  const url = await getRegistryUrl();
   const info = await fetch(url + "/" + name).then(resp => resp.json());
   const tags = info["dist-tags"];
   const currentVersion = tags ? tags.latest : version;

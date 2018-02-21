@@ -10,3 +10,16 @@ export const run = command =>
       }
     })
   );
+
+export const getRegistryUrl = async () => {
+  // ports looks like 0.0.0.0:32768->4873/tcp
+  const ports = await run(
+    'docker ps --filter ancestor=verdaccio/verdaccio --format "{{.Ports}}"'
+  );
+  // includes the colon
+  const port = ports.match(":\\d*");
+  if (!port) {
+    throw "unable to find verdaccio container";
+  }
+  return "http://localhost" + port;
+};
