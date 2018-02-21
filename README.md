@@ -16,8 +16,8 @@ From the directory of the package you want to publish locally:
 dont-really publish
 ```
 
-To add the package from local registry: (coming soon)
+To add the package from local registry:
 
 ```
-dont-really add <package-name>
+dont-really add [options] <package-name>
 ```

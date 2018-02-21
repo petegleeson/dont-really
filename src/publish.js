@@ -1,22 +1,9 @@
 import fs from "fs";
 import path from "path";
-import { exec } from "child_process";
 import semver from "semver";
 import fetch from "node-fetch";
 import { url } from "./config";
-
-const promiseExec = command =>
-  new Promise((resolve, reject) =>
-    exec(command, (error, stdout, stderr) => {
-      if (error) {
-        reject(error);
-      } else if (stderr) {
-        reject(stderr);
-      } else {
-        resolve(stdout);
-      }
-    })
-  );
+import { run } from "./common";
 
 const publish = async args => {
   // get the real information about the package
@@ -38,7 +25,7 @@ const publish = async args => {
   fs.writeFileSync(packageJsonPath, JSON.stringify(nextPackageJson, null, 2));
   try {
     // publish the new version to local registry
-    const publishResult = await promiseExec("npm publish --registry " + url);
+    const publishResult = await run("npm publish --registry " + url);
     console.log("published " + publishResult.trim() + " 🙌");
   } finally {
     // reset the package json
