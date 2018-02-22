@@ -38,7 +38,7 @@ Step one is to ensure you have Docker installed and running. If you need to inst
 docker --version
 ```
 
-Next download and start the [verdaccio](https://github.com/verdaccio/verdaccio) Docker image:
+Download and start the [verdaccio](https://github.com/verdaccio/verdaccio) Docker image by running:
 
 ```
 docker run -it -d --name verdaccio -p 4873:4873 verdaccio/verdaccio
