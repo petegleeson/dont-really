@@ -25,8 +25,7 @@ const publish = async args => {
   fs.writeFileSync(packageJsonPath, JSON.stringify(nextPackageJson, null, 2));
   try {
     // publish the new version to local registry
-    const publishResult = await run("npm publish --registry " + url);
-    console.log("published " + publishResult.trim() + " 🙌");
+    await run("npm publish --registry " + url);
   } finally {
     // reset the package json
     fs.writeFileSync(packageJsonPath, original);

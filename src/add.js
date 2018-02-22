@@ -9,9 +9,8 @@ const add = async args => {
   const command = usingYarn() ? "yarn add " : "npm install ";
   const url = await getRegistryUrl();
   const result = await run(
-    command + args.join(" ") + " --registry " + url + " " + packageName
+    command + args.join(" ") + "--registry " + url + " " + packageName
   );
-  console.log(result);
 };
 
 export default add;
