@@ -1,7 +1,8 @@
 {
   "name": "dont-really",
   "version": "1.0.1",
-  "description": "conveniently manage packages on a local npm registry",
+  "description":
+    "easily publish throwaway versions of a package to a local npm registry",
   "main": "dist/index.js",
   "repository": {
     "type": "git",

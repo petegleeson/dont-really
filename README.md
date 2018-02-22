@@ -1,6 +1,6 @@
 # dont-really
 
-A convenient way to publish to and add packages from a local npm registry.
+Easily publish throwaway versions of a package to a local npm registry.
 
 ## The problem
 
@@ -12,7 +12,7 @@ These difference can lead to errors that are false positives, or worse, errors t
 
 ## The solution
 
-`dont-really` is a utility that provides an easy way of publishing to and adding packages from a local npm registry. This makes it painless to publish local versions of a library and add those versions in other packages. Your library will be added in the same way it would be from your remote registry. You are now consuming your library in the same way your users do. Hurray! 🙌
+`dont-really` is a utility that provides an easy way of publishing to and adding packages from a local npm registry. This makes it painless to publish local versions of a library and add those versions in other packages. Your library will be added in the same way it would be in the wild. You are now consuming your library in the same way your users do. Hurray! 🙌
 
 ## Usage
 
