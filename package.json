@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "conveniently manage packages on a local npm registry",
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/petegleeson/dont-really.git"
+  },
   "scripts": {
     "start": "node dist/bundle.js",
     "build": "rollup -c",
@@ -22,5 +26,6 @@
   "dependencies": {
     "node-fetch": "^2.0.0",
     "semver": "^5.5.0"
-  }
+  },
+  "keywords": ["local", "npm", "registry", "package"]
 }
