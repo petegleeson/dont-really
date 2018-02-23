@@ -57,7 +57,7 @@ This allows you to publish packages to the local registry.
 Finally run:
 
 ```
-npm install -g dont-really
+yarn global add dont-really
 ```
 
 Thats it! 🎉
