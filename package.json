@@ -1,8 +1,7 @@
 {
   "name": "dont-really",
-  "version": "1.0.1",
-  "description":
-    "easily publish throwaway versions of a package to a local npm registry",
+  "version": "1.0.2",
+  "description": "easily publish throwaway versions of a package to a local npm registry",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
@@ -28,5 +27,10 @@
     "node-fetch": "^2.0.0",
     "semver": "^5.5.0"
   },
-  "keywords": ["local", "npm", "registry", "package"]
+  "keywords": [
+    "local",
+    "npm",
+    "registry",
+    "package"
+  ]
 }
