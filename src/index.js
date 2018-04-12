@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 import publish from "./publish";
-import add from "./add";
+import command from "./command";
 
-const [command, ...args] = process.argv.slice(2);
+const args = process.argv.slice(2);
+const [cmd] = args;
 
-if (command === "publish") {
+if (cmd === "publish") {
   publish();
-} else if (command === "add") {
-  add(args);
+} else {
+  command(args);
 }

@@ -16,16 +16,24 @@ These difference can lead to errors that are false positives, or worse, errors t
 
 ## Usage
 
+Substitute `yarn` or `npm` with `dont-really`.
+
 From the directory of the package you want to publish locally:
 
 ```
 dont-really publish
 ```
 
-To add the package from local registry:
+To add the package from the local registry:
 
 ```
 dont-really add [options] <package-name>
+```
+
+Or if you are using `npm`:
+
+```
+dont-really install [options] <package-name>
 ```
 
 ## Installation
